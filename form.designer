@@ -1,0 +1,330 @@
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class Week3
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.tbCost = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.cbAppliances = New System.Windows.Forms.ComboBox()
+        Me.tbPower = New System.Windows.Forms.TextBox()
+        Me.tbHour = New System.Windows.Forms.TextBox()
+        Me.CalculateButton = New System.Windows.Forms.Button()
+        Me.ClearButton = New System.Windows.Forms.Button()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.NoGallonsTextBox = New System.Windows.Forms.TextBox()
+        Me.CostGallonTextBox = New System.Windows.Forms.TextBox()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TotalTextBox = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(40, 69)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(102, 17)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Cost / kW-hour"
+        '
+        'tbCost
+        '
+        Me.tbCost.Location = New System.Drawing.Point(189, 65)
+        Me.tbCost.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbCost.Name = "tbCost"
+        Me.tbCost.Size = New System.Drawing.Size(109, 22)
+        Me.tbCost.TabIndex = 1
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(40, 27)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(118, 17)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "Home Appliances"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(39, 116)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(138, 17)
+        Me.Label3.TabIndex = 3
+        Me.Label3.Text = "Power needed in kW"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(39, 153)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(120, 17)
+        Me.Label4.TabIndex = 4
+        Me.Label4.Text = "Hours Used / Day"
+        '
+        'cbAppliances
+        '
+        Me.cbAppliances.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbAppliances.FormattingEnabled = True
+        Me.cbAppliances.Items.AddRange(New Object() {"Refrigerator", "TV Set", "Washer", "Vacuum cleaner", "Ironing", "Ceiling fan"})
+        Me.cbAppliances.Location = New System.Drawing.Point(189, 23)
+        Me.cbAppliances.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cbAppliances.Name = "cbAppliances"
+        Me.cbAppliances.Size = New System.Drawing.Size(207, 24)
+        Me.cbAppliances.TabIndex = 5
+        '
+        'tbPower
+        '
+        Me.tbPower.Location = New System.Drawing.Point(189, 107)
+        Me.tbPower.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbPower.Name = "tbPower"
+        Me.tbPower.Size = New System.Drawing.Size(109, 22)
+        Me.tbPower.TabIndex = 2
+        '
+        'tbHour
+        '
+        Me.tbHour.Location = New System.Drawing.Point(189, 149)
+        Me.tbHour.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbHour.Name = "tbHour"
+        Me.tbHour.Size = New System.Drawing.Size(109, 22)
+        Me.tbHour.TabIndex = 3
+        '
+        'CalculateButton
+        '
+        Me.CalculateButton.Location = New System.Drawing.Point(364, 109)
+        Me.CalculateButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.CalculateButton.Name = "CalculateButton"
+        Me.CalculateButton.Size = New System.Drawing.Size(97, 40)
+        Me.CalculateButton.TabIndex = 9
+        Me.CalculateButton.Text = "Calculate"
+        Me.CalculateButton.UseVisualStyleBackColor = True
+        '
+        'ClearButton
+        '
+        Me.ClearButton.Location = New System.Drawing.Point(364, 65)
+        Me.ClearButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ClearButton.Name = "ClearButton"
+        Me.ClearButton.Size = New System.Drawing.Size(97, 36)
+        Me.ClearButton.TabIndex = 10
+        Me.ClearButton.Text = "Clear"
+        Me.ClearButton.UseVisualStyleBackColor = True
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(40, 194)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(94, 17)
+        Me.Label5.TabIndex = 11
+        Me.Label5.Text = "No of Gallons"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(40, 235)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(107, 17)
+        Me.Label6.TabIndex = 12
+        Me.Label6.Text = "Cost Per Gallon"
+        '
+        'NoGallonsTextBox
+        '
+        Me.NoGallonsTextBox.Enabled = False
+        Me.NoGallonsTextBox.Location = New System.Drawing.Point(189, 191)
+        Me.NoGallonsTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.NoGallonsTextBox.Name = "NoGallonsTextBox"
+        Me.NoGallonsTextBox.Size = New System.Drawing.Size(109, 22)
+        Me.NoGallonsTextBox.TabIndex = 4
+        Me.NoGallonsTextBox.TabStop = False
+        '
+        'CostGallonTextBox
+        '
+        Me.CostGallonTextBox.Enabled = False
+        Me.CostGallonTextBox.Location = New System.Drawing.Point(188, 231)
+        Me.CostGallonTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.CostGallonTextBox.Name = "CostGallonTextBox"
+        Me.CostGallonTextBox.Size = New System.Drawing.Size(111, 22)
+        Me.CostGallonTextBox.TabIndex = 5
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3})
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle1
+        Me.DataGridView1.Location = New System.Drawing.Point(42, 324)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
+        Me.DataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.DataGridView1.RowHeadersVisible = False
+        Me.DataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        Me.DataGridView1.RowTemplate.Height = 16
+        Me.DataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.DataGridView1.ShowCellErrors = False
+        Me.DataGridView1.ShowCellToolTips = False
+        Me.DataGridView1.ShowEditingIcon = False
+        Me.DataGridView1.ShowRowErrors = False
+        Me.DataGridView1.Size = New System.Drawing.Size(353, 99)
+        Me.DataGridView1.TabIndex = 16
+        '
+        'Column1
+        '
+        Me.Column1.HeaderText = "Home Appliance"
+        Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "Number of hours per day"
+        Me.Column2.Name = "Column2"
+        Me.Column2.ReadOnly = True
+        Me.Column2.Width = 150
+        '
+        'Column3
+        '
+        Me.Column3.HeaderText = "Cost"
+        Me.Column3.Name = "Column3"
+        Me.Column3.ReadOnly = True
+        '
+        'TotalTextBox
+        '
+        Me.TotalTextBox.Enabled = False
+        Me.TotalTextBox.Location = New System.Drawing.Point(372, 287)
+        Me.TotalTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TotalTextBox.Name = "TotalTextBox"
+        Me.TotalTextBox.Size = New System.Drawing.Size(89, 22)
+        Me.TotalTextBox.TabIndex = 6
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(265, 290)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(72, 17)
+        Me.Label7.TabIndex = 18
+        Me.Label7.Text = "Total Cost"
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(425, 406)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(114, 41)
+        Me.Button1.TabIndex = 19
+        Me.Button1.Text = "Exit"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'TextBox1
+        '
+        Me.TextBox1.BackColor = System.Drawing.SystemColors.MenuBar
+        Me.TextBox1.Location = New System.Drawing.Point(318, 166)
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(221, 90)
+        Me.TextBox1.TabIndex = 20
+        Me.TextBox1.Text = "calculation formula example: wattage =  250 usage(per day)=5 hours 250 x 5 = 1250" & _
+    """ & _" & Global.Microsoft.VisualBasic.ChrW(10) & "       ""/1000= 1.25 kWh per day 1.25kWh x 5 hours= 6.25 kW"
+        '
+        'Week3
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        Me.ClientSize = New System.Drawing.Size(551, 459)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.TotalTextBox)
+        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.CostGallonTextBox)
+        Me.Controls.Add(Me.NoGallonsTextBox)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.ClearButton)
+        Me.Controls.Add(Me.CalculateButton)
+        Me.Controls.Add(Me.tbHour)
+        Me.Controls.Add(Me.tbPower)
+        Me.Controls.Add(Me.cbAppliances)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.tbCost)
+        Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Name = "Week3"
+        Me.Text = "Utility Calc App"
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents tbCost As System.Windows.Forms.TextBox
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents cbAppliances As System.Windows.Forms.ComboBox
+    Friend WithEvents tbPower As System.Windows.Forms.TextBox
+    Friend WithEvents tbHour As System.Windows.Forms.TextBox
+    Friend WithEvents CalculateButton As System.Windows.Forms.Button
+    Friend WithEvents ClearButton As System.Windows.Forms.Button
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents NoGallonsTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents CostGallonTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents Column1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents TotalTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+
+End Class
